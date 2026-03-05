@@ -465,6 +465,20 @@ body.dark-theme .floating-badge {
     animation-delay: 1.5s;
 }
 
+.badge-5 {
+    top: 50%;
+    left: -12%;
+    color: #F1502F;
+    animation-delay: 0.3s;
+}
+
+.badge-6 {
+    bottom: 5%;
+    left: 5%;
+    color: #00adef;
+    animation-delay: 1.2s;
+}
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0px);
@@ -903,6 +917,40 @@ body.dark-theme .education-card {
 
 body.dark-theme .project-tech span {
     background: var(--bg-gray);
+}
+
+.project-links {
+    margin-bottom: 15px;
+}
+
+.demo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.demo-badge.no-demo {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+body.dark-theme .demo-badge.no-demo {
+    background: #7f1d1d;
+    color: #fca5a5;
+}
+
+.demo-badge.live {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+body.dark-theme .demo-badge.live {
+    background: #064e3b;
+    color: #6ee7b7;
 }
 
 .project-achievement {
