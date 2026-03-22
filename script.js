@@ -5,7 +5,10 @@ window.addEventListener('scroll', () => {
 
 // MOBILE MENU TOGGLE
 function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
+  const menu = document.getElementById('mobileMenu');
+  const hamburger = document.getElementById('hamburger');
+  menu.classList.toggle('open');
+  hamburger.classList.toggle('active');
 }
 
 // TYPEWRITER EFFECT
