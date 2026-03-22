@@ -219,10 +219,60 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .project-award { display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #f59e0b; margin-top: auto; }
 
 /* CERTS */
-.certs-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+.certs-grid { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 14px; 
+}
 .cert-card {
-  background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
-  padding: 16px; display: flex; align-items: center; gap: 12px; transition: all 0.3s;
+  background: #fff; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 14px;
+  padding: 16px; 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  transition: all 0.3s;
+}
+.cert-card:hover { border-color: #6366f1; transform: translateY(-2px); }
+.cert-icon { 
+  width: 40px; 
+  height: 40px; 
+  border-radius: 10px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 18px; 
+  flex-shrink: 0; 
+}
+.cert-info { flex: 1; min-width: 0; }
+.cert-name { 
+  font-family: 'Syne', sans-serif; 
+  font-weight: 600; 
+  font-size: 12px; 
+  margin-bottom: 2px; 
+  color: #0f172a; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+.cert-issuer { 
+  font-family: 'JetBrains Mono', monospace; 
+  font-size: 10px; 
+  color: #94a3b8; 
+}
+.cert-check {
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%; 
+  background: rgba(34,197,94,0.1); 
+  border: 1px solid rgba(34,197,94,0.3);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: #22c55e; 
+  font-size: 10px; 
+  flex-shrink: 0;
 }
 .cert-card:hover { border-color: #6366f1; transform: translateY(-2px); }
 .cert-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
