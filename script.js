@@ -52,6 +52,11 @@ const obs = new IntersectionObserver(entries => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
+// Add staggered animation delay to project cards
+document.querySelectorAll('.project-card').forEach((card, i) => {
+  card.style.transitionDelay = (i % 3) * 0.05 + 's';
+});
+
 // PROJECT FILTER
 function filterProjects(tag, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
