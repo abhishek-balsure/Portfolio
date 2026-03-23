@@ -284,9 +284,16 @@ nav::after {
 
 /* FOOTER */
 footer { background: #f8fafc; padding: 24px 0; border-top: 1px solid #e2e8f0; text-align: center; }
-.footer-copy { font-size: 13px; color: #94a3b8; }
-.footer-copy a { color: #6366f1; font-weight: 500; }
-.footer-copy a:hover { text-decoration: underline; }
+.footer-socials { display: flex; gap: 12px; justify-content: center; margin-bottom: 16px; }
+.footer-socials a { 
+  width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; 
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; color: #64748b; font-size: 16px;
+  transition: all 0.2s;
+}
+.footer-socials a:hover { border-color: #6366f1; color: #6366f1; transform: translateY(-2px); }
+.footer-inner { margin-top: 8px; }
+.footer-copy { font-size: 13px; color: #94a3b8; margin-bottom: 4px; }
+.footer-copy span { color: #6366f1; font-weight: 500; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
