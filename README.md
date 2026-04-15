@@ -70,19 +70,13 @@
 
 ---
 
-## 🏆 Certifications (12)
+## 🏆 Certifications (5)
 
-- ✅ SQL (Basic) - HackerRank
 - ✅ Go (Basic) - HackerRank
 - ✅ Introduction to Cloud Computing - IBM SkillsBuild
-- ✅ Understanding Cloud Computing Services - IBM SkillsBuild
-- ✅ Understanding Cloud Deployment Models - IBM SkillsBuild
-- ✅ Cloud Services and DevSecOps - IBM SkillsBuild
-- ✅ Introduction to Artificial Intelligence - IBM SkillsBuild
-- ✅ AI Fluency for Students - Anthropic
 - ✅ AI Fluency: Framework & Foundations - Anthropic
-- ✅ Claude 101 - Anthropic
 - ✅ Introduction to Cybersecurity - IBM SkillsBuild
+- ✅ Introduction to Model Context Protocol - Anthropic
 
 ---
 
