@@ -29,7 +29,7 @@ const phrases = [
   'Aspiring Cloud & DevOps Engineer',
   'Web Developer · Python + Flask',
   'ML Security Builder',
-  'BCA 2026 · Actively Job Seeking',
+  'BCA Sem VI · Actively Job Seeking',
 ];
 let pIdx = 0, cIdx = 0, del = false;
 const el = document.getElementById('typed-text');

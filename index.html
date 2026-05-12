@@ -1,457 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abhishek Balsure - Aspiring Cloud & DevOps Engineer | Web Developer | ML Security Builder">
+  <meta name="description"
+    content="Abhishek Balsure - Aspiring Cloud & DevOps Engineer | Web Developer | ML Security Builder">
   <meta name="keywords" content="Abhishek Balsure, DevOps, Cloud Engineer, Web Developer, Python, Flask, BCA, Pune">
   <meta name="author" content="Abhishek Balsure">
   <meta property="og:title" content="Abhishek Balsure | Cloud & DevOps Engineer">
-  <meta property="og:description" content="BCA final-year student at Sarhad College, Pune. Building web apps, cloud-native solutions, and ML-powered security tools.">
+  <meta property="og:description"
+    content="BCA Graduate from Sarhad College, Pune. Building web apps, cloud-native solutions, and ML-powered security tools.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abhishek-balsure.github.io/Portfolio">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#6366f1">
   <title>Abhishek Balsure | Aspiring Cloud Engineer & Web Developer</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav id="navbar">
-  <div class="container">
-    <div class="nav-inner">
-      <div class="nav-logo">AB<span>.</span></div>
-      <ul class="nav-links">
-        <li><a href="#about">about</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#certifications">certs</a></li>
-        <li><a href="#contact" class="nav-cta">hire me</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="nav-logo">AB<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#certifications">certs</a></li>
+          <li><a href="#contact" class="nav-cta">hire me</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
       </div>
     </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta-mobile" onclick="toggleMenu()">hire me</a>
   </div>
-</nav>
 
-<div class="mobile-menu" id="mobileMenu">
-  <ul>
-    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-    <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
-    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta-mobile" onclick="toggleMenu()">hire me</a>
-</div>
-
-<section id="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-tag">
-          <span class="dot"></span>
-          Available for Fresher Roles · Pune
-        </div>
-        <h1 class="hero-title">
-          Hi, I'm<br>
-          <span class="gradient">Abhishek</span><br>
-          Balsure
-        </h1>
-        <p class="hero-subtitle"><span id="typed-text"></span><span class="cursor"></span></p>
-        <p class="hero-desc">
-          BCA final-year student at Sarhad College, Pune. I build web apps, cloud-native solutions, and ML-powered tools. Aspiring Cloud & DevOps Engineer — actively looking for my first role.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View Projects</a>
-          <a href="mailto:balsureabhishek@gmail.com" class="btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
-        </div>
-        <div class="hero-socials">
-          <a href="https://github.com/abhishek-balsure" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/abhishek-balsure-61a389313/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:balsureabhishek@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">// 01. about</span>
-      <h2 class="section-title">Who I Am</h2>
-      <p class="section-subtitle">A fresher engineer with real hands-on experience in Cloud, DevOps, and backend development.</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-text fade-up">
-        <p>I'm a <strong>BCA final-year student</strong> at Sarhad College of Arts, Commerce & Science (Savitribai Phule Pune University), graduating in 2026. I am a <strong>Web Developer</strong> and aspiring <strong>Cloud & DevOps Engineer</strong> — I build web apps, automate infrastructure, and am actively upskilling toward cloud-native and DevOps roles.</p>
-        <p>From deploying Flask apps on EC2 to building ML-powered security tools, I enjoy the full cycle: write code, containerise it with Docker, and think about how it behaves in production.</p>
-        <p>I placed <strong>3rd at Smart India Hackathon 2025</strong> with an AI-based traffic management system, and pitched <strong>ShieldGuard Pro</strong> at Innovyuh 2.0 by GDG — a phishing detection platform with 95%+ accuracy.</p>
-        <div class="about-info-list">
-          <div class="about-info-item">
-            <div class="ico"><i class="fas fa-graduation-cap"></i></div>
-            <span><strong>BCA Sem VI</strong> · Sarhad College, Pune · 2026</span>
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="dot"></span>
+            Available for Fresher Roles · Pune
           </div>
-          <div class="about-info-item">
-            <div class="ico"><i class="fas fa-map-marker-alt"></i></div>
-            <span><strong>Pune</strong>, Maharashtra, India</span>
+          <h1 class="hero-title">
+            Hi, I'm<br>
+            <span class="gradient">Abhishek</span><br>
+            Balsure
+          </h1>
+          <p class="hero-subtitle"><span id="typed-text"></span><span class="cursor"></span></p>
+          <p class="hero-desc">
+            BCA Graduate from Sarhad College, Pune. I build web apps, cloud-native solutions, and ML-powered tools.
+            Aspiring Cloud & DevOps Engineer — actively looking for my first role.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View Projects</a>
+            <a href="mailto:balsureabhishek@gmail.com" class="btn-secondary"><i class="fas fa-paper-plane"></i> Get In
+              Touch</a>
           </div>
-          <div class="about-info-item">
-            <div class="ico"><i class="fas fa-briefcase"></i></div>
-            <span>Seeking <strong>Web Dev / Cloud / DevOps</strong> fresher roles</span>
-          </div>
-          <div class="about-info-item">
-            <div class="ico"><i class="fas fa-envelope"></i></div>
-            <span>balsureabhishek@gmail.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="fade-up">
-        <div class="timeline-title">Journey So Far</div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-period">Feb 2026</div>
-            <div class="timeline-heading">Innovyuh 2.0 Hackathon</div>
-            <div class="timeline-sub">GDG On Campus · MIT ACSC · Team TechKnights · ShieldGuard Pro</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-period">Dec 2025</div>
-            <div class="timeline-heading">Smart India Hackathon 2025 — 3rd Place</div>
-            <div class="timeline-sub">AI-Based Traffic Management System</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-period">2023–2026</div>
-            <div class="timeline-heading">Bachelor of Computer Applications</div>
-            <div class="timeline-sub">Sarhad College · SPPU, Pune</div>
+          <div class="hero-socials">
+            <a href="https://github.com/abhishek-balsure" class="social-link" target="_blank"><i
+                class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-balsure-61a389313/" class="social-link" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:balsureabhishek@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="skills">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">// 02. skills</span>
-      <h2 class="section-title">Tech Stack</h2>
-      <p class="section-subtitle">Tools and technologies I work with day to day.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-category fade-up">
-        <div class="skill-cat-header">
-          <div class="skill-cat-icon"><i class="fas fa-cloud" style="color:#6366f1"></i></div>
-          <div class="skill-cat-title">Cloud & DevOps</div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag hot">AWS</span>
-          <span class="skill-tag">Azure</span>
-          <span class="skill-tag hot">Docker</span>
-          <span class="skill-tag">Jenkins</span>
-          <span class="skill-tag hot">Git</span>
-          <span class="skill-tag">GitHub Actions</span>
-          <span class="skill-tag">Linux</span>
-          <span class="skill-tag">Kali Linux</span>
-        </div>
+  <section id="about">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">// 01. about</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-subtitle">A fresher engineer with real hands-on experience in Cloud, DevOps, and backend
+          development.</p>
       </div>
-      <div class="skill-category fade-up">
-        <div class="skill-cat-header">
-          <div class="skill-cat-icon"><i class="fab fa-python" style="color:#3776ab"></i></div>
-          <div class="skill-cat-title">Programming & Backend</div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag hot">Python</span>
-          <span class="skill-tag hot">Flask</span>
-          <span class="skill-tag">Go</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">JavaScript</span>
-        </div>
-      </div>
-      <div class="skill-category fade-up">
-        <div class="skill-cat-header">
-          <div class="skill-cat-icon"><i class="fas fa-brain" style="color:#8b5cf6"></i></div>
-          <div class="skill-cat-title">AI / ML & Security</div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag hot">scikit-learn</span>
-          <span class="skill-tag">Random Forest</span>
-          <span class="skill-tag">ML Pipelines</span>
-          <span class="skill-tag">Nmap</span>
-          <span class="skill-tag">OSINT</span>
-          <span class="skill-tag">DevSecOps</span>
-        </div>
-      </div>
-      <div class="skill-category fade-up">
-        <div class="skill-cat-header">
-          <div class="skill-cat-icon"><i class="fas fa-database" style="color:#4f8aff"></i></div>
-          <div class="skill-cat-title">Databases & APIs</div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag hot">SQLite</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">SQLAlchemy</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">DynamoDB</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">// 03. projects</span>
-      <h2 class="section-title">Things I've Built</h2>
-      <p class="section-subtitle">Real projects, real code — from ML security tools to cloud-ready web apps.</p>
-    </div>
-    <div class="projects-filter fade-up">
-      <button class="filter-btn active" onclick="filterProjects('all',this)">all</button>
-      <button class="filter-btn" onclick="filterProjects('ml',this)">ai / ml</button>
-      <button class="filter-btn" onclick="filterProjects('web',this)">web apps</button>
-      <button class="filter-btn" onclick="filterProjects('hackathon',this)">hackathon</button>
-    </div>
-    <div class="projects-grid" id="projectsGrid">
-      <div class="project-card fade-up" data-tags="ml hackathon">
-        <div class="project-header">
-          <div class="project-icon" style="background:rgba(239,68,68,0.1)"><i class="fas fa-shield-alt" style="color:#ef4444"></i></div>
-          <div class="project-links">
-            <a href="https://github.com/abhishek-balsure/phishing-detection" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <p>I'm a <strong>BCA Graduate</strong> from Sarhad College of Arts, Commerce & Science (Savitribai Phule Pune
+            University), Pune. I am a <strong>Web Developer</strong> and aspiring <strong>Cloud & DevOps
+              Engineer</strong> — I build web apps, automate infrastructure, and am actively upskilling toward
+            cloud-native and DevOps roles.</p>
+          <p>From deploying Flask apps on EC2 to building ML-powered security tools, I enjoy the full cycle: write code,
+            containerise it with Docker, and think about how it behaves in production.</p>
+          <p>I placed <strong>3rd at Smart India Hackathon 2025</strong> with an AI-based traffic management system, and
+            pitched <strong>ShieldGuard Pro</strong> at Innovyuh 2.0 by GDG — a phishing detection platform with 95%+
+            accuracy.</p>
+          <div class="about-info-list">
+            <div class="about-info-item">
+              <div class="ico"><i class="fas fa-graduation-cap"></i></div>
+              <span><strong>BCA Graduate</strong> · Sarhad College, Pune · 2026</span>
+            </div>
+            <div class="about-info-item">
+              <div class="ico"><i class="fas fa-map-marker-alt"></i></div>
+              <span><strong>Pune</strong>, Maharashtra, India</span>
+            </div>
+            <div class="about-info-item">
+              <div class="ico"><i class="fas fa-briefcase"></i></div>
+              <span>Seeking <strong>Web Dev / Cloud / DevOps</strong> fresher roles</span>
+            </div>
+            <div class="about-info-item">
+              <div class="ico"><i class="fas fa-envelope"></i></div>
+              <span>balsureabhishek@gmail.com</span>
+            </div>
           </div>
         </div>
-        <div class="project-name">ShieldGuard Pro</div>
-        <div class="project-desc">ML-based phishing URL detection at 95%+ accuracy. Features batch processing, email scanning, QR code scanning, admin panel, REST API, and PDF/Excel export.</div>
-        <div class="project-badges">
-          <span class="project-badge">Python</span>
-          <span class="project-badge">Flask</span>
-          <span class="project-badge">scikit-learn</span>
-          <span class="project-badge">SQLite</span>
-        </div>
-        <div class="project-award"><i class="fas fa-trophy"></i> Innovyuh 2.0 · GDG On Campus</div>
-      </div>
-      <div class="project-card fade-up" data-tags="ml hackathon">
-        <div class="project-header">
-          <div class="project-icon" style="background:rgba(234,179,8,0.1)"><i class="fas fa-traffic-light" style="color:#eab308"></i></div>
-          <div class="project-links">
-            <a href="https://github.com/abhishek-balsure" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+        <div class="fade-up">
+          <div class="timeline-title">Journey So Far</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-period">Feb 2026</div>
+              <div class="timeline-heading">Innovyuh 2.0 Hackathon</div>
+              <div class="timeline-sub">GDG On Campus · MIT ACSC · Team TechKnights · ShieldGuard Pro</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-period">Dec 2025</div>
+              <div class="timeline-heading">Smart India Hackathon 2025 — 3rd Place</div>
+              <div class="timeline-sub">AI-Based Traffic Management System</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-period">2023–2026</div>
+              <div class="timeline-heading">Bachelor of Computer Applications</div>
+              <div class="timeline-sub">Sarhad College · SPPU, Pune · Graduated 2026</div>
+            </div>
           </div>
         </div>
-        <div class="project-name">AI Traffic Management</div>
-        <div class="project-desc">Smart traffic signal optimisation using AI/ML for real-time prediction and flow analysis in smart city environments.</div>
-        <div class="project-badges">
-          <span class="project-badge">Python</span>
-          <span class="project-badge">AI/ML</span>
-          <span class="project-badge">Web Tech</span>
-        </div>
-        <div class="project-award"><i class="fas fa-medal"></i> Smart India Hackathon 2025 · 3rd Place</div>
       </div>
-      <div class="project-card fade-up" data-tags="web">
-        <div class="project-header">
-          <div class="project-icon" style="background:rgba(59,130,246,0.1)"><i class="fas fa-user-graduate" style="color:#3b82f6"></i></div>
-          <div class="project-links">
-            <a href="https://github.com/abhishek-balsure/student-admission" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">// 02. skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-subtitle">Tools and technologies I work with day to day.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-cloud" style="color:#6366f1"></i></div>
+            <div class="skill-cat-title">Cloud & DevOps</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">AWS</span>
+            <span class="skill-tag hot">Docker</span>
+            <span class="skill-tag hot">Git</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Kali Linux</span>
           </div>
         </div>
-        <div class="project-name">Student Admission Portal</div>
-        <div class="project-desc">Full-featured admission management system for Sarhad College with online applications, merit list generation, admin dashboard.</div>
-        <div class="project-badges">
-          <span class="project-badge">Flask</span>
-          <span class="project-badge">SQLAlchemy</span>
-          <span class="project-badge">SQLite</span>
-        </div>
-      </div>
-      <div class="project-card fade-up" data-tags="web">
-        <div class="project-header">
-          <div class="project-icon" style="background:rgba(168,85,247,0.1)"><i class="fas fa-shopping-cart" style="color:#a855f7"></i></div>
-          <div class="project-links">
-            <a href="https://github.com/abhishek-balsure/NexaShop" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fab fa-python" style="color:#3776ab"></i></div>
+            <div class="skill-cat-title">Programming & Backend</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Python</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
           </div>
         </div>
-        <div class="project-name">NexaShop</div>
-        <div class="project-desc">E-commerce OLTP system with a full admin dashboard, product management, order tracking, and user authentication.</div>
-        <div class="project-badges">
-          <span class="project-badge">Python</span>
-          <span class="project-badge">Flask</span>
-          <span class="project-badge">SQLite</span>
-        </div>
-      </div>
-      <div class="project-card fade-up" data-tags="web">
-        <div class="project-header">
-          <div class="project-icon" style="background:rgba(34,197,94,0.1)"><i class="fas fa-users" style="color:#22c55e"></i></div>
-          <div class="project-links">
-            <a href="https://github.com/abhishek-balsure/NSS-Website" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-database" style="color:#4f8aff"></i></div>
+            <div class="skill-cat-title">Databases & APIs</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">SQLite</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
           </div>
         </div>
-        <div class="project-name">NSS Website</div>
-        <div class="project-desc">Official NSS activities website for Sarhad College — event management, volunteer tracking, and a responsive front-end.</div>
-        <div class="project-badges">
-          <span class="project-badge">HTML</span>
-          <span class="project-badge">CSS</span>
-          <span class="project-badge">JavaScript</span>
-        </div>
       </div>
-      <div class="project-card fade-up" data-tags="web">
-        <div class="project-header">
-          <div class="project-icon" style="background:rgba(34,197,94,0.1)"><i class="fas fa-plane" style="color:#22c55e"></i></div>
-          <div class="project-links">
-            <a href="https://github.com/abhishek-balsure/Star-Tours" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">// 03. projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+        <p class="section-subtitle">Real projects, real code — from ML security tools to cloud-ready web apps.</p>
+      </div>
+      <div class="projects-filter fade-up">
+        <button class="filter-btn active" onclick="filterProjects('all',this)">all</button>
+        <button class="filter-btn" onclick="filterProjects('ml',this)">ai / ml</button>
+        <button class="filter-btn" onclick="filterProjects('web',this)">web apps</button>
+        <button class="filter-btn" onclick="filterProjects('hackathon',this)">hackathon</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card fade-up" data-tags="ml hackathon">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(239,68,68,0.1)"><i class="fas fa-shield-alt"
+                style="color:#ef4444"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/abhishek-balsure/phishing-detection" target="_blank"
+                class="project-link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-name">ShieldGuard Pro</div>
+          <div class="project-desc">ML-based phishing URL detection at 95%+ accuracy. Features batch processing, email
+            scanning, QR code scanning, admin panel, REST API, and PDF/Excel export.</div>
+          <div class="project-badges">
+            <span class="project-badge">Python</span>
+            <span class="project-badge">Flask</span>
+            <span class="project-badge">scikit-learn</span>
+            <span class="project-badge">SQLite</span>
+          </div>
+          <div class="project-award"><i class="fas fa-trophy"></i> Innovyuh 2.0 · GDG On Campus</div>
+        </div>
+        <div class="project-card fade-up" data-tags="ml hackathon">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(234,179,8,0.1)"><i class="fas fa-traffic-light"
+                style="color:#eab308"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/abhishek-balsure" target="_blank" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-name">AI Traffic Management</div>
+          <div class="project-desc">Smart traffic signal optimisation using AI/ML for real-time prediction and flow
+            analysis in smart city environments.</div>
+          <div class="project-badges">
+            <span class="project-badge">Python</span>
+            <span class="project-badge">AI/ML</span>
+            <span class="project-badge">Web Tech</span>
+          </div>
+          <div class="project-award"><i class="fas fa-medal"></i> Smart India Hackathon 2025 · 3rd Place</div>
+        </div>
+        <div class="project-card fade-up" data-tags="web">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(59,130,246,0.1)"><i class="fas fa-user-graduate"
+                style="color:#3b82f6"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/abhishek-balsure/student-admission" target="_blank"
+                class="project-link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-name">Student Admission Portal</div>
+          <div class="project-desc">Full-featured admission management system for Sarhad College with online
+            applications, merit list generation, admin dashboard.</div>
+          <div class="project-badges">
+            <span class="project-badge">Flask</span>
+            <span class="project-badge">SQLAlchemy</span>
+            <span class="project-badge">SQLite</span>
           </div>
         </div>
-        <div class="project-name">Star Tours</div>
-        <div class="project-desc">Tours and travel website with destination exploration, booking inquiry forms, and responsive design for travel enthusiasts.</div>
-        <div class="project-badges">
-          <span class="project-badge">HTML</span>
-          <span class="project-badge">CSS</span>
-          <span class="project-badge">JavaScript</span>
-        </div>
-      </div>
-      <div class="project-card fade-up" data-tags="web">
-        <div class="project-header">
-          <div class="project-icon" style="background:rgba(0,212,255,0.1)"><i class="fas fa-briefcase" style="color:#00d4ff"></i></div>
-          <div class="project-links">
-            <a href="https://github.com/abhishek-balsure/Portfolio" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
-            <a href="https://abhishek-balsure.github.io/Portfolio" target="_blank" class="project-link-btn"><i class="fas fa-external-link-alt"></i></a>
+        <div class="project-card fade-up" data-tags="web">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(168,85,247,0.1)"><i class="fas fa-shopping-cart"
+                style="color:#a855f7"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/abhishek-balsure/NexaShop" target="_blank" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-name">NexaShop</div>
+          <div class="project-desc">E-commerce OLTP system with a full admin dashboard, product management, order
+            tracking, and user authentication.</div>
+          <div class="project-badges">
+            <span class="project-badge">Python</span>
+            <span class="project-badge">Flask</span>
+            <span class="project-badge">SQLite</span>
           </div>
         </div>
-        <div class="project-name">This Portfolio</div>
-        <div class="project-desc">Personal developer portfolio hosted on GitHub Pages. Interactive, fully responsive, and built with clean HTML/CSS/JS.</div>
-        <div class="project-badges">
-          <span class="project-badge">HTML</span>
-          <span class="project-badge">CSS</span>
-          <span class="project-badge">JavaScript</span>
+        <div class="project-card fade-up" data-tags="web">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(34,197,94,0.1)"><i class="fas fa-users"
+                style="color:#22c55e"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/abhishek-balsure/NSS-Website" target="_blank" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-name">NSS Website</div>
+          <div class="project-desc">Official NSS activities website for Sarhad College — event management, volunteer
+            tracking, and a responsive front-end.</div>
+          <div class="project-badges">
+            <span class="project-badge">HTML</span>
+            <span class="project-badge">CSS</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card fade-up" data-tags="web">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(34,197,94,0.1)"><i class="fas fa-plane"
+                style="color:#22c55e"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/abhishek-balsure/Star-Tours" target="_blank" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-name">Star Tours</div>
+          <div class="project-desc">Tours and travel website with destination exploration, booking inquiry forms, and
+            responsive design for travel enthusiasts.</div>
+          <div class="project-badges">
+            <span class="project-badge">HTML</span>
+            <span class="project-badge">CSS</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card fade-up" data-tags="web">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(0,212,255,0.1)"><i class="fas fa-briefcase"
+                style="color:#00d4ff"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/abhishek-balsure/Portfolio" target="_blank" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://abhishek-balsure.github.io/Portfolio" target="_blank" class="project-link-btn"><i
+                  class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-name">This Portfolio</div>
+          <div class="project-desc">Personal developer portfolio hosted on GitHub Pages. Interactive, fully responsive,
+            and built with clean HTML/CSS/JS.</div>
+          <div class="project-badges">
+            <span class="project-badge">HTML</span>
+            <span class="project-badge">CSS</span>
+            <span class="project-badge">JavaScript</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="certifications">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">// 04. certifications</span>
-      <h2 class="section-title">Certifications</h2>
-      <p class="section-subtitle">5 verified certifications across cloud, AI, security, and programming.</p>
-    </div>
-    <div class="certs-grid">
-
-      <!-- 1 -->
-      <div class="cert-card fade-up">
-        <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-        <div class="cert-info">
-          <div class="cert-name">Introduction to Cybersecurity</div>
-          <div class="cert-issuer">IBM · Mar 2026</div>
-        </div>
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">// 04. certifications</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">5 verified certifications across cloud, AI, security, and programming.</p>
       </div>
-
-      <!-- 2 -->
-      <div class="cert-card fade-up">
-        <div class="cert-icon"><i class="fas fa-link"></i></div>
-        <div class="cert-info">
-          <div class="cert-name">Introduction to Model Context Protocol</div>
-          <div class="cert-issuer">Anthropic · Mar 2026</div>
+      <div class="certs-grid">
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Introduction to Cybersecurity</div>
+            <div class="cert-issuer">IBM · Mar 2026</div>
+          </div>
         </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="cert-card fade-up">
-        <div class="cert-icon"><i class="fas fa-code"></i></div>
-        <div class="cert-info">
-          <div class="cert-name">Go Language</div>
-          <div class="cert-issuer">HackerRank · Feb 2026</div>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-link"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Introduction to Model Context Protocol</div>
+            <div class="cert-issuer">Anthropic · Mar 2026</div>
+          </div>
         </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="cert-card fade-up">
-        <div class="cert-icon"><i class="fas fa-brain"></i></div>
-        <div class="cert-info">
-          <div class="cert-name">AI Fluency – Framework and Foundation</div>
-          <div class="cert-issuer">Anthropic</div>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Go Language</div>
+            <div class="cert-issuer">HackerRank · Feb 2026</div>
+          </div>
         </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="cert-card fade-up">
-        <div class="cert-icon"><i class="fas fa-cloud"></i></div>
-        <div class="cert-info">
-          <div class="cert-name">Introduction to Cloud Computing</div>
-          <div class="cert-issuer">IBM · Feb 2026</div>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">AI Fluency – Framework and Foundation</div>
+            <div class="cert-issuer">Anthropic</div>
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">// 05. contact</span>
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="section-subtitle">Open to fresher roles, internships, and collaborations in Cloud & DevOps.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-left fade-up">
-        <p>Whether you're hiring, collaborating, or just want to chat about cloud infra or ML — reach out. I typically respond within 24 hours.</p>
-        <div class="contact-links">
-          <a href="mailto:balsureabhishek@gmail.com" class="contact-item">
-            <div class="cico"><i class="fas fa-envelope"></i></div>
-            <div><div class="contact-item-label">Email</div><div class="contact-item-val">balsureabhishek@gmail.com</div></div>
-          </a>
-          <a href="https://www.linkedin.com/in/abhishek-balsure-61a389313/" target="_blank" class="contact-item">
-            <div class="cico"><i class="fab fa-linkedin-in"></i></div>
-            <div><div class="contact-item-label">LinkedIn</div><div class="contact-item-val">abhishek-balsure-61a389313</div></div>
-          </a>
-          <a href="https://github.com/abhishek-balsure" target="_blank" class="contact-item">
-            <div class="cico"><i class="fab fa-github"></i></div>
-            <div><div class="contact-item-label">GitHub</div><div class="contact-item-val">abhishek-balsure</div></div>
-          </a>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Introduction to Cloud Computing</div>
+            <div class="cert-issuer">IBM · Feb 2026</div>
+          </div>
         </div>
-      </div>
-      <div class="contact-form fade-up">
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" placeholder="Jane Doe" id="cName">
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="jane@company.com" id="cEmail">
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea placeholder="Hi Abhishek, I'd like to discuss..." id="cMsg"></textarea>
-        </div>
-        <button class="btn-primary" onclick="sendMail()" style="width:100%;justify-content:center;border:none;cursor:pointer;">
-          <i class="fas fa-paper-plane"></i> Send Message
-        </button>
-        <div class="form-status" id="formStatus"><i class="fas fa-check"></i> Opening your mail client...</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <div class="container">
-    <div class="footer-socials">
-      <a href="https://github.com/abhishek-balsure" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/abhishek-balsure-61a389313/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="mailto:balsureabhishek@gmail.com"><i class="fas fa-envelope"></i></a>
+  <section id="contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">// 05. contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open to fresher roles, internships, and collaborations in Cloud & DevOps.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left fade-up">
+          <div class="contact-links">
+            <a href="mailto:balsureabhishek@gmail.com" class="contact-item">
+              <div class="cico"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-val">balsureabhishek@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/abhishek-balsure-61a389313/" target="_blank" class="contact-item">
+              <div class="cico"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-val">abhishek-balsure-61a389313</div>
+              </div>
+            </a>
+            <a href="https://github.com/abhishek-balsure" target="_blank" class="contact-item">
+              <div class="cico"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-val">abhishek-balsure</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form fade-up">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Jane Doe" id="cName">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="jane@company.com" id="cEmail">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Hi Abhishek, I'd like to discuss..." id="cMsg"></textarea>
+          </div>
+          <button class="btn-primary" onclick="sendMail()"
+            style="width:100%;justify-content:center;border:none;cursor:pointer;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </div>
+      </div>
     </div>
-    <div class="footer-inner">
-      <div class="footer-copy">Designed & built by <span>Abhishek Balsure</span> · 2026</div>
-      <div class="footer-copy"><span>abhishek-balsure</span>.github.io/Portfolio</div>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<script src="script.js"></script>
+  <footer>
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com/abhishek-balsure" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-balsure-61a389313/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:balsureabhishek@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-copy">Designed & built by <span>Abhishek Balsure</span> · 2026</div>
+        <div class="footer-copy"><span>abhishek-balsure</span>.github.io/Portfolio</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // =====================================================
+    // EMAILJS SETUP — fill in your 3 values from emailjs.com
+    // =====================================================
+    const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";   // Account → API Keys
+    const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";   // Email Services
+    const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // Email Templates
+    // =====================================================
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    function sendMail() {
+      const name = document.getElementById("cName").value.trim();
+      const email = document.getElementById("cEmail").value.trim();
+      const message = document.getElementById("cMsg").value.trim();
+      const status = document.getElementById("formStatus");
+
+      if (!name || !email || !message) {
+        status.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please fill in all fields.';
+        status.style.display = "block";
+        status.style.color = "#ef4444";
+        return;
+      }
+
+      const btn = document.querySelector(".contact-form .btn-primary");
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        from_name: name,
+        from_email: email,
+        message: message
+      })
+        .then(() => {
+          status.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully!';
+          status.style.display = "block";
+          status.style.color = "#22c55e";
+          btn.disabled = false;
+          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+          document.getElementById("cName").value = "";
+          document.getElementById("cEmail").value = "";
+          document.getElementById("cMsg").value = "";
+        })
+        .catch((err) => {
+          status.innerHTML = '<i class="fas fa-times-circle"></i> Failed to send. Try emailing directly.';
+          status.style.display = "block";
+          status.style.color = "#ef4444";
+          btn.disabled = false;
+          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+          console.error("EmailJS error:", err);
+        });
+    }
+  </script>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
