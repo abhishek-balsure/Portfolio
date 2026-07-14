@@ -36,6 +36,7 @@
           <li><a href="#skills">skills</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#certifications">certs</a></li>
+          <li><a href="#resume">resume</a></li>
           <li><a href="mailto:balsureabhishek@gmail.com?subject=Hiring Inquiry" class="nav-cta">Hire Me</a></li>
         </ul>
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -51,6 +52,7 @@
       <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
       <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
       <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+      <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
       <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
     </ul>
     <a href="#contact" class="nav-cta-mobile" onclick="toggleMenu()">hire me</a>
@@ -290,25 +292,6 @@
         </div>
         <div class="project-card fade-up" data-tags="web">
           <div class="project-header">
-            <div class="project-icon" style="background:rgba(59,130,246,0.1)"><i class="fas fa-user-graduate"
-                style="color:#3b82f6"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/abhishek-balsure/student-admission" target="_blank"
-                class="project-link-btn"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-name">Student Admission Portal</div>
-          <div class="project-desc">Full-featured admission management system for Sarhad College with online
-            applications, merit list generation, admin dashboard.</div>
-          <div class="project-badges">
-            <span class="project-badge">Flask</span>
-            <span class="project-badge">SQLAlchemy</span>
-            <span class="project-badge">SQLite</span>
-          </div>
-        </div>
-
-        <div class="project-card fade-up" data-tags="web">
-          <div class="project-header">
             <div class="project-icon" style="background:rgba(34,197,94,0.1)"><i class="fas fa-users"
                 style="color:#22c55e"></i></div>
             <div class="project-links">
@@ -388,10 +371,123 @@
     </div>
   </section>
 
+  <section id="resume">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">// 05. resume</span>
+        <h2 class="section-title">My Resume</h2>
+        <p class="section-subtitle">Download my professional resume or view it directly in your browser.</p>
+      </div>
+      <div class="resume-content fade-up">
+        <div class="resume-preview" id="resumePreview">
+          <div class="resume-icon">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div class="resume-info">
+            <h3>Abhishek Balsure - Resume</h3>
+            <p>Cloud & DevOps Engineer | Web Developer | BCA Graduate</p>
+            <div class="resume-stats">
+              <span><i class="fas fa-user-graduate"></i> BCA Graduate</span>
+              <span><i class="fas fa-code"></i> Python, Flask, Docker</span>
+              <span><i class="fas fa-cloud"></i> AWS, GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+        <div class="resume-actions">
+          <button class="btn-primary" onclick="openResumeModal()">
+            <i class="fas fa-eye"></i> View Resume
+          </button>
+          <a href="#" class="btn-secondary" download="Abhishek_Balsure_Resume.pdf">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="resume-modal" id="resumeModal">
+    <div class="resume-modal-content">
+      <div class="resume-modal-header">
+        <h2>Abhishek Balsure</h2>
+        <span class="resume-modal-close" onclick="closeResumeModal()">&times;</span>
+      </div>
+      <div class="resume-modal-body">
+        <div class="resume-section">
+          <h3><i class="fas fa-user"></i> About Me</h3>
+          <p>Aspiring Cloud & DevOps Engineer with strong foundation in Web Development. BCA Graduate from Sarhad College, Pune. Passionate about building scalable cloud-native solutions and automating infrastructure.</p>
+        </div>
+        <div class="resume-section">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="resume-item">
+            <strong>Bachelor of Computer Applications (BCA)</strong>
+            <span>Sarhad College, Pune | 2026 | SGPA: 8.0+</span>
+          </div>
+        </div>
+        <div class="resume-section">
+          <h3><i class="fas fa-cogs"></i> Technical Skills</h3>
+          <ul class="resume-skills">
+            <li><strong>Cloud Platforms:</strong> AWS EC2, Cloudflare Pages, Render, Supabase</li>
+            <li><strong>DevOps:</strong> Docker, Docker Compose, GitHub Actions, Jenkins, CI/CD</li>
+            <li><strong>Languages:</strong> Python, Go, Bash/Shell, JavaScript</li>
+            <li><strong>Backend:</strong> Flask, REST APIs, PostgreSQL, MongoDB, SQLite</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Learning:</strong> Kubernetes, Terraform, Prometheus</li>
+          </ul>
+        </div>
+        <div class="resume-section">
+          <h3><i class="fas fa-trophy"></i> Achievements</h3>
+          <div class="resume-item">
+            <strong>Smart India Hackathon 2025</strong>
+            <span>3rd Place - AI-Based Traffic Management System</span>
+          </div>
+          <div class="resume-item">
+            <strong>Innovyuh 2.0 Hackathon</strong>
+            <span>GDG On Campus - ShieldGuard Pro (Phishing Detection)</span>
+          </div>
+        </div>
+        <div class="resume-section">
+          <h3><i class="fas fa-project-diagram"></i> Projects</h3>
+          <div class="resume-item">
+            <strong>ShieldGuard Pro</strong>
+            <span>ML-based Phishing Detection | Docker | AWS EC2 | GitHub Actions CI/CD</span>
+          </div>
+          <div class="resume-item">
+            <strong>AI Traffic Management System</strong>
+            <span>Smart traffic signal optimization using AI/ML | Smart India Hackathon 2025</span>
+          </div>
+          <div class="resume-item">
+            <strong>NSS College Website</strong>
+            <span>Supabase | PostgreSQL | Cloudflare Pages | GitHub Actions CI/CD</span>
+          </div>
+        </div>
+        <div class="resume-section">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <ul class="resume-cert-list">
+            <li>Introduction to Cybersecurity - IBM (Mar 2026)</li>
+            <li>Introduction to Model Context Protocol - Anthropic (Mar 2026)</li>
+            <li>Go Language - HackerRank (Feb 2026)</li>
+            <li>SQL (Basic) - HackerRank (Feb 2026)</li>
+            <li>AI Fluency - Framework and Foundation - Anthropic</li>
+            <li>Introduction to Cloud Computing - IBM (Feb 2026)</li>
+          </ul>
+        </div>
+        <div class="resume-section">
+          <h3><i class="fas fa-info-circle"></i> Contact Information</h3>
+          <ul class="resume-contact">
+            <li><i class="fas fa-envelope"></i> balsureabhishek@gmail.com</li>
+            <li><i class="fab fa-linkedin-in"></i> linkedin.com/in/abhishek-balsure-61a389313</li>
+            <li><i class="fab fa-github"></i> github.com/abhishek-balsure</li>
+            <li><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section id="contact">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">// 05. contact</span>
+        <span class="section-tag">// 06. contact</span>
         <h2 class="section-title">Let's Connect</h2>
         <p class="section-subtitle">Open to fresher roles, internships, and collaborations in Cloud & DevOps.</p>
       </div>
