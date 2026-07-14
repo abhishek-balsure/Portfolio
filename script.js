@@ -26,9 +26,10 @@ function toggleMenu() {
 
 // TYPEWRITER EFFECT
 const phrases = [
-  'Aspiring Cloud & DevOps Engineer',
-  'Web Developer · Python + Flask',
-  'BCA Graduate · Actively Job Seeking',
+  'Cloud & DevOps Engineer',
+  'Docker + AWS EC2 Specialist',
+  'BCA Graduate · SGPA 8.0+',
+  'Python + Flask Developer',
 ];
 let pIdx = 0, cIdx = 0, del = false;
 const el = document.getElementById('typed-text');
@@ -69,14 +70,14 @@ function filterProjects(tag, btn) {
 
 // CONTACT FORM - MAILTO
 function sendMail() {
-  const name = document.getElementById('cName').value.trim();
-  const email = document.getElementById('cEmail').value.trim();
-  const msg = document.getElementById('cMsg').value.trim();
+  const name = document.getElementById("cName").value.trim();
+  const email = document.getElementById("cEmail").value.trim();
+  const msg = document.getElementById("cMsg").value.trim();
   if (!name || !email || !msg) { alert('Please fill in all fields.'); return; }
   const subject = encodeURIComponent('Portfolio Contact from ' + name);
   const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + msg);
   window.location.href = 'mailto:balsureabhishek@gmail.com?subject=' + subject + '&body=' + body;
-  const status = document.getElementById('formStatus');
+  const status = document.getElementById("formStatus");
   status.style.display = 'block';
   setTimeout(() => { status.style.display = 'none'; }, 4000);
 }
