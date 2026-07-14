@@ -68,6 +68,33 @@ function filterProjects(tag, btn) {
   });
 }
 
+// RESUME MODAL FUNCTIONS
+function openResumeModal() {
+  const modal = document.getElementById('resumeModal');
+  modal.classList.add('open');
+  document.body.classList.add('no-scroll');
+}
+
+function closeResumeModal() {
+  const modal = document.getElementById('resumeModal');
+  modal.classList.remove('open');
+  document.body.classList.remove('no-scroll');
+}
+
+// Close modal when clicking outside
+document.getElementById('resumeModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeResumeModal();
+  }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeResumeModal();
+  }
+});
+
 // CONTACT FORM - MAILTO
 function sendMail() {
   const name = document.getElementById("cName").value.trim();
